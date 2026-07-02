@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MIET College - Smart Campus</title>
+</head>
+
+<body>
+  <!-- header for headings of the webpage and under img tag src is for link alt for alternative text for image -->
+  <header>
+    <img src="https://image-static.collegedunia.com/public/college_data/images/logos/1705041201download14.png"
+      alt="MIET Logo" width="70" />
+    <!-- h is heading tag and p is paragraph tag -->
+    <h1>MIET College</h1>
+    <p>Smart Campus Helpdesk Portal</p>
+  </header>
+  <!-- navigation bar under that unordered list((in which no numbering) li for list and bullets -->
+  <!-- a href for link for that particular text -->
+  <nav>
+    <ul>
+      <li>
+        <!-- under href id of section with # to link these with particular sections of the web page -->
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#About">About</a>
+      </li>
+      <li>
+        <a href="#Register">Register Complaint</a>
+      </li>
+      <li>
+        <a href="#Resources">Resources</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- hr for horizontol line -->
+  <hr />
+  <!-- main for the main data of the web page -->
+<!-- ________________________________________________________________________________________________________________ -->
+
+  <main>
+    <!-- section is multiple sections under main
+     assign unique id to each section  -->
+    <section id="Home">
+      <figure>
+        <img src="https://mietjmu.in/wp-content/uploads/2025/02/DJI_20241129113027_0387_D-Large.jpeg" alt="MIET"
+          width="100%" />
+        <figcaption>MIET College - Main Campus</figcaption>
+      </figure>
+      <h2>Welcome to the Smart Campus Portal</h2>
+      <p>
+        Your one-stop portal for registering complaints, accessing resources,
+        and staying informed about campus life. We are here to help you with
+        every issue — big or small.
+      </p>
+    </section>
+    <hr />
+    <!-- ________________________________________________________________________________________________ -->
+
+    <section id="About">
+      <h2>About the Helpdesk</h2>
+      <p>
+        The MIET Smart Campus Helpdesk is a digital platform that allows
+        students to report issues related to hostels, labs, classrooms,
+        library, transport, and more. Our team ensures timely resolution and
+        keeps you updated on the status of your requests.
+      </p>
+      <blockquote>
+        "Our mission is to provide a seamless experience for every student,
+        ensuring their concerns are heard and resolved promptly."
+      </blockquote>
+      <h3>How it Works</h3>
+      <!-- ordered list in which sequence matters i.e numbered lists -->
+      <ol>
+        <li>Fill the complaint form below with your details and issue</li>
+        <li>Our team reviews and assigns the complaint</li>
+        <li>Track progress through email notifications</li>
+        <li>Confirm resolution once satisfied</li>
+      </ol>
+    </section>
+    <hr />
+    <!-- ________________________________________________________________________________________________________ -->
+
+    <section id="Register">
+      <h2>Register a Complaint</h2>
+      <p>Fields marked with * are required.</p>
+      <!-- form tag for making form -->
+      <form>
+        <fieldset>
+          <!-- fieldset for paticular field in the form and legend for the particular heading of that field in the form -->
+          <legend>
+            <h3>Student Details</h3>
+          </legend>
+          <!-- label is the info for that particular input box -->
+          <label for="name">Full Name*</label>
+          <!-- input type means the datatype for that input box id needs to same -->
+          <input type="text" id="name" placeholder="Enter Full Name" />
+
+          <label for="email">Email*</label>
+          <input type="text" id="email" placeholder="you@miet.edu" />
+
+          <label for="rno">Roll Number*</label>
+          <input type="text" id="rno" placeholder="MIET22101" />
+
+          <label for="phone">Phone*</label>
+          <input type="tel" id="phone" placeholder="9867543210" />
+
+          <label for="branch">Year/Branch*</label>
+          <!-- select for dropdown selecting options and the provided options are the options and value attribute 
+            tells the backend that which option is selected -->
+          <select id="branch">
+            <option value="">--Select Category--</option>
+            <option value="cse-1st-year">CSE 1st year</option>
+            <option value="cse-2nd-year">CSE 2nd year</option>
+            <option value="cse-3rd-year">CSE 3rd year</option>
+            <option value="cse-4th-year">CSE 4th year</option>
+          </select>
+        </fieldset>
+
+        <!-- Another field in the form -->
+        <fieldset>
+          <legend>
+            <h3>Complaint Details</h3>
+          </legend>
+          <label for="category">Category*</label>
+          <select id="category">
+            <option value="hostel">Hostel Issue</option>
+            <option value="Equipment">Equipment Issue</option>
+            <option value="classroom">Classroom Issue</option>
+          </select>
+
+          <label for="complaint">Complaint Title</label>
+          <input type="text" id="complaint" placeholder="Brief title minimum 10 characters" minlength="10" />
+
+          <!-- this type of input textarea for dynamic area to write -->
+          <label for="description">Description</label>
+          <textarea name="description" id="description" placeholder="Describe your issue in detail"></textarea>
+
+          <p>Priority *</p>
+          <!-- radio for creating circle checkboxes and used to create input under label tag -->
+          <!-- same name under all input so only one checkbox is selected at a time -->
+          <label for=""><input type="radio" value="low" name="priority" />Low</label>
+          <label for=""><input type="radio" val="medium" name="priority" />Medium</label>
+          <label for=""><input type="radio" val="high" name="priority" />High</label>
+          <label for=""><input type="radio" val="urgent" name="priority" />Urgent</label>
+          <label for="location">Location</label>
+          <!--write text and datalist provide suggestions based on the options provided under datalist tag -->
+          <!-- under input tag ,list is a attribute to link datalist to make a dropdown -->
+          <input type="text" list="locations" placeholder="start typing for suggestion" />
+          <datalist id="locations">
+            <option value="">Choose from Suggestions</option>
+            <option value="Main"></option>
+            <option value="Block A"></option>
+            <option value="Block B"></option>
+            <option value="library"></option>
+            <option value="canteen"></option>
+          </datalist>
+        </fieldset>
+        <!-- one more field is created in the form -->
+
+        <!-- another field -->
+        <fieldset>
+          <!-- date type for date format to take input -->
+          <legend>
+            <h3>Supporting Information(Optional)</h3>
+          </legend>
+          <label for="date">Date of Issue</label>
+          <input type="date" id="date" />
+
+          <!-- input type file for option of uploading accept =images tells that image files are need to uploaded -->
+          <label for="image">Upload Image</label>
+          <input type="file" id="image" accept="images/" multiple />
+
+          <!-- type range for volume like button to select range min and max ar the values of range and value=5 is the by default value -->
+          <label for="satisfaction">Satisfaction before issue (1-10)</label>
+          <input type="range" min="0" max="10" value="5" id="satisfacton" />
+
+          <!-- color tag for selection of color -->
+          <label for="color">Resolution Tag</label>
+          <input type="color" id="color" value="#ff0000" />
+        </fieldset>
+
+        <!-- another field -->
+        <fieldset>
+          <legend>
+            <h3>Submit</h3>
+          </legend>
+          <!-- checkbox is for creating tick checkboxes under label tag -->
+          <label for=""><input type="checkbox" value="accept" />I Confirm the Information
+            Provides is Correct *</label>
+          <!-- break tag for newline -->
+          <!-- <br> -->
+          <p></p>
+
+          <!-- for submit button and clear the form button-->
+          <!-- value means content written under submit button -->
+          <input type="submit" value="Submit Complaint" />
+          <input type="reset" value="Clear Form" />
+        </fieldset>
+      </form>
+      <!-- now whole form is created -->
+    </section>
+    <hr />
+    <!-- ____________________________________________________________________________________________________ -->
+
+    <!-- now new section -->
+    <section id="Resources">
+      <h2>Resources & Downloads</h2>
+      <!-- for creating table use table tag -->
+      <table>
+        <caption>
+          Course Materials and Helpdesk Resources
+        </caption>
+        <!-- Heading of the table -->
+        <thead>
+          <!-- tr for row and under that row many columns described by th(column in the heading oh the table) -->
+          <!-- as heading contains one row so only one tr -->
+          <tr>
+            <th>Resources Name</th>
+            <th>Type</th>
+            <th>Size</th>
+            <th>Download</th>
+          </tr>
+        </thead>
+
+        <!-- tbody is for the body of the table -->
+        <!-- table contain 3 rows and each rom 4 colums 
+            so 3 tr tags and under each tr 4 td(td means colums in body) -->
+        <tbody>
+          <tr>
+            <td>Helpdesk User</td>
+            <td>PDF</td>
+            <td>1.2 MB</td>
+            <!-- href to highlight as link  -->
+            <td><a href="#" download>Download</a></td>
+          </tr>
+
+          <tr>
+            <td>Complaint SOP document</td>
+            <td>PDF</td>
+            <td>800 KB</td>
+            <td><a href="#" download>Download</a></td>
+          </tr>
+
+          <tr>
+            <td>Hostel Rules & Regulations</td>
+            <td>PDF</td>
+            <td>2.1 MB</td>
+            <td><a href="#" download>Download</a></td>
+          </tr>
+
+          <!-- footer of the table  -->
+        <tfoot>
+          <td><strong>Total Resources aviailable : 5</strong></td>
+        </tfoot>
+        </tbody>
+      </table>
+
+      <h2>Helpful External Link</h2>
+      <ul>
+        <li><a href="">MIET Official Website</a></li>
+        <li><a href="">Student Portal</a></li>
+        <li><a href="">College Email</a></li>
+      </ul>
+    </section>
+    <hr>
+
+    <!-- ________________________________________________________________________________________ -->
+    <!-- new section  -->
+    <section id="FAQ">
+      <!-- details tage for creating a on hover expand 
+       as when person click on summary
+       it will expand it to the paragraph -->
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>How do I track my complaint status?</summary>
+        <p>After submitting a complaint, you will receive email updates. You can also check the status by logging into
+          the student portal.</p>
+      </details>
+
+      <details>
+        <summary>How long does it take to resolve a complaint?</summary>
+        <p>Most complaints are resolved within 48 hours. Urgent issues are prioritised and resolved within 24 hours.</p>
+      </details>
+    </section>
+    <hr>
+
+
+  </main>
+</body>
+
+</html>

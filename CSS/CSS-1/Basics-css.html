@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <!-- under head tag write css code -->
+    <!-- style is used for internal css (css that is written inside html) -->
+    <style>
+      /* target element is html is div tag*/
+      /* so all div tags content are styled */
+      div {
+        color:gold;
+      }
+
+      /* box design in css by class selectors*/
+      .Red-container{
+        width: 200px;
+        height: 200px;
+        border: 2px solid black; /*border color and density*/
+        background-color: red; /*bg color of selected area*/
+      }
+
+      /* now rectangle */
+      .rectangle{
+        width :400px;
+        height:200px;
+        border:2px solid black;
+        background-color:purple;
+      }
+
+      
+    </style>
+  </head>
+
+  <body>
+    <!-- divison is for particular block in page and block level element as cover whole width -->
+    <!-- so applying css to particular divison is easy -->
+    <div>CSS basic styles</div>
+    <p>CSS PARAGRAPH</p>
+    <div>CSS DIV TAG</div>
+
+    <!-- making a box in css by using class selectors -->
+    <div class="Red-container"></div>  
+    <br>
+    <div class="rectangle"></div>  
+  </body>
+</html>
