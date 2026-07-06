@@ -1,0 +1,13 @@
+.container{
+    display: flex;  /*to print the content in singlr line*/
+    gap: 20px;      /*gap between elements in the line*/
+    background-color: brown;    
+    /* to color the class */
+    /* to justify the content in that particular container */
+    padding: 10px;
+    /* to increase the height of the tag  */
+    height: 200px;
+    justify-content: center;
+    /* to put the content of tag in the end of the box  */
+    align-items: end;
+}

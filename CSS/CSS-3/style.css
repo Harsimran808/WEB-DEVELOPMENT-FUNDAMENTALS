@@ -1,0 +1,57 @@
+.flex-container {
+  /* to put all elements of header in a single line  */
+  /* this is a parent class if we color it all will be colored */
+  display: flex;
+  gap: 20px;
+  /* width: 100%; */
+  /* space between means the one content on rhs of page and other on the lhs  */
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 0px -2px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  width: 99%;
+  background-color: white;
+}
+
+.flex-item2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.next-segment {
+  /* to add backgroung image in the tag  */
+  background-image: url("https://www.w3schools.com/w3images/architect.jpg");
+  /* to take full height  */
+  height: 100vh;
+  background-position: center center;
+  /* in bg is big and image is small it repeat image until whole container is covered */
+  background-repeat: no-repeat;
+  /* cover whole container  */
+  background-size: cover;
+
+  /* alligning text in the center of bg image  */
+  display: flex;
+  /* height: 700px; */
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-size: 50px; */
+}
+/* directly targeting elements of next segment class using > */
+.next-segment > p {
+  color: white;
+  font-size: 40px;
+  word-spacing: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.next-segment > p > span {
+  /* span is inline ele padding is not allowed so convrting it to inlinr block helps to apply padding on it  */
+  display: inline-block;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
