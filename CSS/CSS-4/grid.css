@@ -1,0 +1,16 @@
+.grid-container{
+    background-color:bisque;
+    /* type of matrix  */
+    display: grid;
+    /* tells no of col in grid with width of each col  */
+    /* grid-template-columns: 100px 200px; */
+
+    /* it means each col with equal width and ele gets equally distributed to each col */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+.item{
+    padding: 10px;
+    text-align: center;
+}

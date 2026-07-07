@@ -55,3 +55,68 @@
   padding: 8px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.project-heading{
+  margin: 16px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* grid and property of each column */
+.project-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 60vh;
+  gap: 12px;
+}
+/* div is each ele of col image is pasted align image position to center */
+.project-container>div{
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project-container>div>p{
+  display:inline-block;
+  color: white;
+  text-align:right;
+  background-color: black;
+  /* height: 8px; */
+  padding: 8px;
+}
+.project-1,.project-5{
+  /* height: 100vh; */
+  background-repeat: no-repeat;
+  background-image: url("https://www.w3schools.com/w3images/house5.jpg");
+}
+.project-2,.project-6{
+  /* height: 100vh; */
+  background-repeat: no-repeat;
+  background-image: url("https://www.w3schools.com/w3images/house2.jpg");
+}
+.project-3,.project-7{
+  /* height: 100vh; */
+  background-repeat: no-repeat;
+  background-image: url("https://www.w3schools.com/w3images/house3.jpg");
+}
+.project-4,.project-8{
+  /* height: 100vh; */
+  background-repeat: no-repeat;
+  background-image: url("https://www.w3schools.com/w3images/house4.jpg");
+}
+
+.people-container{
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 12px;
+  /* width: 50px; */
+}
+.people-container>div>img{
+  width: 100%;
+  display: block;
+}
+.people-button {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  border: 0px;
+  padding: 6px 0px;
+  cursor: pointer;
+}
