@@ -1,0 +1,55 @@
+.box{
+    width:100px;
+    height: 100px;
+    background-color: red;
+    border-color: black;
+    border-width: 10px;
+}
+
+/* @media is used for color transitions 
+like this when screen width gets <=400px the color transits to yellow */
+/* @media (width<=400px){
+    .box{
+        background-color: yellow;
+    }
+} */
+
+/* when screen width gets less than 400 px the box or target ele gets invisible */
+/* @media (width<=400px){
+    .box{
+        display: none;
+    }
+}
+
+@media ((width>=400px) and (width<600px) ){
+    .box{
+        background-color: yellow;
+    }
+} */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 10px;
+    /* height: 50vh; */
+}
+.grid_item{
+    height:300px;
+    width:300px;
+    background-position: center center;
+    background-color: aqua;
+}
+
+/* transit to 2 columns when width of screen is <=900px */
+@media (width <= 900px){
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (width <= 550px){
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+}

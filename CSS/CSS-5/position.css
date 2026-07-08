@@ -1,0 +1,20 @@
+h1 {
+  background-color: blueviolet;
+  text-align: center;
+  /* position static means nochange in pos  */
+  /* position relative means can change pos but relative to the parent element 
+       position sticky means it get sticks to particular position as top 0 means get sticks to the top 
+       position absolute means not consider as an element can cover the content behind it*/
+  position: sticky;
+  top: 0px;
+}
+
+.to_top {
+  background-color: black;
+  color: white;
+  display: inline;
+  padding: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 90%;
+}
