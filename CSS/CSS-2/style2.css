@@ -1,0 +1,19 @@
+.box1{
+    background-color: blue;
+}
+.box2{
+    background-color: pink;
+}
+.box3{
+    background-color: green;
+}
+.container
+{
+    display: flex;
+    /* this display will change the bock element to inline block element */
+    background-color: red;
+    padding: 10px;
+    gap: 100px;
+    /* justify-content: space-between; */
+
+}
