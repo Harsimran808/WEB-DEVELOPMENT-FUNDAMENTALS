@@ -47,6 +47,7 @@ MAIN(x,y)
 // --------------------------------------------------------------------------------------------------------------------------------------
 
 // Calling anonymous functions using callbacks
+// anonymous fun : function(parameters){   }
 function callback1(f,x,y){
     console.log("SHAKTIMAAN ")
     f(x,y)
@@ -60,6 +61,7 @@ callback1(a,2,4)
 // --------------------------------------------------------------------------------------------------------------------------------------
 
 // Arrow function
+//  (para)=>{   }
 let reet=()=>{
     console.log("ABBA DABBA JABBA")
 }
