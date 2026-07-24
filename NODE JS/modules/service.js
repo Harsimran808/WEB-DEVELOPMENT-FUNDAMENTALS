@@ -18,7 +18,11 @@ function getProductByCategory(pcat){
 function getProductCount(){
     return products.length
 }
+function getAfforadable(maxp){
+    return products.filter((pd)=>pd.price<=maxp)
+}
 module.exports.all=getAllProducts
 module.exports.id=getProductById
 module.exports.cat=getProductByCategory
 module.exports.l=getProductCount
+module.exports.afford=getAfforadable
