@@ -74,3 +74,8 @@ function del(){
 function update(){
     document.getElementById("ele10").innerText="NAMASTE"
 }
+// ------------------------------------------------------------------------------------------------
+function cl(){
+    let m=document.getElementById("btm")
+    m.innerText="clicked"
+}
